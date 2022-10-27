@@ -1,10 +1,12 @@
 <template>
   <div>
+    <Header />
     <BlockBuilder v-for="(item, index) in this.blocks" :key="index" :blockComponent="item" />
   </div>
 </template>
 
 <script>
+import '~/assets/scss/styles.scss'
 export default {
     
   data(){

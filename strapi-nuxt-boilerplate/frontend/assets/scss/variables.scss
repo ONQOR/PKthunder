@@ -1,0 +1,24 @@
+// Ref: https://github.com/nuxt-community/vuetify-module#customvariables
+//
+// The variables you want to modify
+// $font-size-root: 20px;
+// imports
+// // global 
+@import "./components/button-section";
+
+// fonts
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
+
+h1 {
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 36px;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 28px;
+    text-align: center;
+}

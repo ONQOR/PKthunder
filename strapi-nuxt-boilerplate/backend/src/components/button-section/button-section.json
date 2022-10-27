@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_button_section_button_sections",
+  "info": {
+    "displayName": "Button Section",
+    "icon": "arrow-alt-circle-down",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "buttons": {
+      "displayName": "buttons",
+      "type": "component",
+      "repeatable": false,
+      "component": "buttons.buttons"
+    },
+    "subtitle": {
+      "type": "string"
+    }
+  }
+}
