@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@walletpass/pass-js": "^6.9.1"
+  }
+}
