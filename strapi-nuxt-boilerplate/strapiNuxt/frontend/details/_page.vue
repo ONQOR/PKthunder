@@ -1,20 +1,17 @@
 <template>
   <div>
-    <BlockBuilder v-for="(item, index) in this.blocks" :key="index" :blockComponent="item" />
-      <div>
-        asdas
-      </div>
+    asdas
   </div>
 </template>
 
 <script>
+
 export default {
     
   data(){
     return {
       page: this.$route.params.page,
-      pageID:'',
-      blocks: ''
+      pageID:''
     }
   },
   methods: {
@@ -29,16 +26,13 @@ export default {
       var pageID = thePageID.data[0].id;
 
       const thePageData = await fetch(
-          'http://localhost:1337/api/pages/' + pageID + '?populate=deep'
+          'http://localhost:1337/api/pages/' + pageID + '?populate[dynamic_content][populate]=*'
         ).then((res) => {
         // can set up 404 redirection here
         return res.json();
       });
 
       console.log('thePageData', thePageData);
-      if(thePageData.data.attributes.dynamic_content){
-        this.blocks = thePageData.data.attributes.dynamic_content
-      }
       // console.log(this.$router.params);
     }
   },
@@ -49,5 +43,3 @@ export default {
   
 }
 </script>
-
-

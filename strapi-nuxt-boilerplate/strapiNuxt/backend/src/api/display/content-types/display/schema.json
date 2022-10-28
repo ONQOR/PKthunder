@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "displays",
+  "info": {
+    "singularName": "display",
+    "pluralName": "displays",
+    "displayName": "Display",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Email": {
+      "type": "string"
+    },
+    "Telephone": {
+      "type": "string"
+    }
+  }
+}
