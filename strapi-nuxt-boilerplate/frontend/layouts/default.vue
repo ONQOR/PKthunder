@@ -1,7 +1,7 @@
 <template>
     <div class="app__container">
-        <!-- <Nuxt /> -->
-        <div class="container">
+        <Nuxt />
+        <!-- <div class="container">
           <Logo />
           <Input />
           <Input />
@@ -10,7 +10,7 @@
           <ImgColor />
           <Card /> 
 
-        </div>
+        </div> -->
     </div>
 </template>
 
