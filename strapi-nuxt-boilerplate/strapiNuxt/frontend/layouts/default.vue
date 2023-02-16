@@ -1,16 +1,6 @@
 <template>
     <div class="app__container">
-        <!-- <Nuxt /> -->
-        <div class="container">
-          <Logo />
-          <Input />
-          <Input />
-          <Input />
-
-          <ImgColor />
-          <Card /> 
-
-        </div>
+        <Nuxt />
     </div>
 </template>
 
@@ -22,6 +12,6 @@ export default {
   data () {
     return {
     }
-  }
+  },
 }
 </script>
