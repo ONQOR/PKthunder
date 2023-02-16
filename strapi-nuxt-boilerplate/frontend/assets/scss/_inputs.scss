@@ -1,0 +1,11 @@
+.input {
+    input {
+        border-bottom: 2px solid black;
+        height: 30px;
+        margin: 0 0 35px 0;
+        width: 100%;
+        &::placeholder {
+            color: black;
+        }
+    }
+}
