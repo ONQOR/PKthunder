@@ -42,8 +42,18 @@ export default {
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [
-  ],
+  modules: ['@nuxtjs/auth'],
+  auth: {
+    strategies: {
+      local: {
+        endpoints: {
+          login: { url: '/auth/local', method: 'post', propertyName: 'jwt' },
+          user: { url: '/users/me', method: 'get', propertyName: false },
+          logout: false,
+        },
+      },
+    },
+  },
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   // vuetify: {
@@ -65,7 +75,9 @@ export default {
   // },
 
   // // Build Configuration: https://go.nuxtjs.dev/config-build
-  // build: {
+  build: {
+    standalone: true
+  }
   //   loaders: {
   //     sass: {
   //       implementation: require('sass'),

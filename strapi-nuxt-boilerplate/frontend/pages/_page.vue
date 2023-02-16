@@ -2,6 +2,9 @@
   <div>
     <Header />
     <BlockBuilder v-for="(item, index) in this.blocks" :key="index" :blockComponent="item" />
+      <div>
+        asdas
+      </div>
   </div>
 </template>
 
