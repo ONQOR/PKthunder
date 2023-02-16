@@ -1,0 +1,32 @@
+// fonts
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
+
+@import "card";
+@import "inputs";
+@import "sign-in";
+@import "img-color";
+
+body {
+    background-color: lavender;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    font-family: poppins;
+    justify-content: center;
+}
+
+.container {
+    border-radius: 3px;
+    background-color: white;
+    width: 400px;
+    height: 100%;
+    margin: auto;
+    padding: 40px 25px 60px 25px;
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+    .Logo {
+        margin: 0 0 70px 0;
+        width: 100%;
+    }
+}
