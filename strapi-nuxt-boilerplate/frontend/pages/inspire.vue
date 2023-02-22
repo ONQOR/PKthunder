@@ -12,7 +12,7 @@ export default {
       method: 'GET',
       headers: {
         'Accept': 'application/json',
-        'Content-Type': 'application/json;charset=UTF-8'
+        'Content-Type': 'lication/json;charset=UTF-8'
       },
       data: {
         name: 'David',

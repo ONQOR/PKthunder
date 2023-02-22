@@ -13,7 +13,7 @@
 </template>
 
 <script>
-import '../assets/styles.scss'
+import '../assets/scss/styles.scss'
 
 export default {
   name: 'login',

@@ -1,10 +1,13 @@
 // fonts
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
-
+@import "variables";
 @import "card";
 @import "inputs";
 @import "sign-in";
 @import "img-color";
+@import "components/recipient/business-card";
+@import "components/recipient/miniature-card";
+@import "components/recipient/person-profile";
 
 body {
     background-color: lavender;
@@ -13,6 +16,31 @@ body {
     align-items: center;
     font-family: poppins;
     justify-content: center;
+}
+
+h2 {
+    font-family: 'Poppins';
+    color: white;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+p {
+    font-size: 12px;
+    font-weight: 300;
+    font-family: 'Poppins';
+    color: white;
+}
+
+button {
+    width: 100%;
+    height: 38px;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 16px;
+    border-radius: 10px;
+    color: white;
 }
 
 .container {
@@ -25,8 +53,20 @@ body {
     display: flex;
     flex-direction: column;
     // align-items: center;
+    &.dark {
+        background-color: black;
+    }
     .Logo {
         margin: 0 0 70px 0;
         width: 100%;
+    
+        &.dark {
+            path {
+                fill: #FFFFFF !important;
+            }
+            path:last-child {
+                fill: #00AAFF !important;
+            }
+        }
     }
 }

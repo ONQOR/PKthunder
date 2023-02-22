@@ -17,17 +17,17 @@ export default {
         };
     },
     methods: {
-        async asyncData() {
-            const header = await fetch(this.$store.state.apiroute.url + "/api/header" + '?populate=deep,5'
-            ).then((res) => {
-                return res.json();
-            });
-            this.logoOnqorUrl = header.data.attributes.logo.data.attributes.url;
-            this.logoOnqorAlt = header.data.attributes.logo.data.attributes.alternativeText;
-        }
+        // async asyncData() {
+        // //     const header = await fetch(this.$store.state.apiroute.url + "/api/header" + '?populate=deep,5'
+        // //     ).then((res) => {
+        // //         return res.json();
+        // //     });
+        // //     // this.logoOnqorUrl = header.data.attributes.logo.data.attributes.url;
+        // //     // this.logoOnqorAlt = header.data.attributes.logo.data.attributes.alternativeText;
+        // // }
     },
     mounted() {
-        this.asyncData();
+        // this.asyncData();
     },
 }
 </script>

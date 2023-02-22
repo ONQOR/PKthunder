@@ -1,7 +1,7 @@
 <template>
   <div>
     <Header />
-    <BlockBuilder v-for="(item, index) in this.blocks" :key="index" :blockComponent="item" />
+    <!-- <BlockBuilder v-for="(item, index) in this.blocks" :key="index" :blockComponent="item" /> -->
   </div>
 </template>
 
