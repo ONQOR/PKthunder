@@ -1,0 +1,23 @@
+.button-section {
+    h2 {
+        margin-bottom: 32px;
+    }
+
+    &__buttons {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        button {
+            width: 165px;
+            padding: 10px;
+            margin-bottom: 50px;
+            cursor: pointer;
+
+            &:hover {
+                background-color: white;
+                color: black;
+            }
+        }
+    }
+}
