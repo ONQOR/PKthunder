@@ -73,10 +73,10 @@ button {
     
         &.dark {
             path {
-                fill: #FFFFFF !important;
+                fill: white;
             }
             path:last-child {
-                fill: #00AAFF !important;
+                fill: $blue;
             }
         }
     }
@@ -124,5 +124,54 @@ button {
 @keyframes dash {
     to {
         background-position: 100% 0%, 0% 100%, 0% 0%, 100% 100%;
+    }
+}
+
+.theme-light {
+
+    .button-light-mode {
+        background-color: black;
+
+        div {
+            background-color: white;
+        }
+    }
+
+    .container.dark {
+        background-color: white;
+    }
+
+    h2, h3, p {
+        color: black;
+    }
+    
+    button.square {
+        color: black;
+        border-color: black;
+
+        &:hover {
+            background-color: $darkSmoke;
+            color: white;
+        }
+    }
+
+    .user-info__details__image {
+        border: 5px solid black;
+    }
+
+    .Logo {
+        &.dark {
+            path {
+                fill: black;
+            }
+            path:last-child {
+                fill: $blue;
+            }
+        }
+    }
+
+    .border-dark {
+        background: linear-gradient(90deg, black 50%, transparent 50%), linear-gradient(90deg, black 50%, transparent 50%), linear-gradient(0deg, black 50%, transparent 50%), linear-gradient(0deg, black 50%, transparent 50%);
+        color: black;
     }
 }

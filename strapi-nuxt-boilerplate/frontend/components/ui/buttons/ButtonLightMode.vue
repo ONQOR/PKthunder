@@ -23,6 +23,7 @@ export default {
         this.isActive = !this.isActive;
         let sitebody = document.body;
         this.isActive ? sitebody.classList.add("theme-light") : sitebody.classList.remove("theme-light");
+        this.$emit("active", this.isActive);
       },
   }
 }
