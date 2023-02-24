@@ -91,6 +91,10 @@ button {
         background-color: transparent;
         position: relative;
     }
+    .arrow-left {
+        transform: rotate(180deg);
+        cursor: pointer;
+    }
 }
 
 .border-light {

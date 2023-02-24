@@ -3,7 +3,11 @@
       <div class="container dark">
             <Logo dark />
             <BusinessCard v-if="stepper == 0" :cards="cards" @clicked="openProfile($event)" />
-            <PersonProfile v-if="stepper == 1" :profile="cards[indexCard]"/>
+            <div v-if="stepper == 1">
+                <PersonProfile :profile="cards[indexCard]"/>
+                <Arrow @clicked="backToCards($event)"/>
+            </div>
+
 
       </div>
     </div>
@@ -47,7 +51,11 @@ export default {
       openProfile(index) {
           this.indexCard = index
           this.stepper = 1
+      },
+      backToCards() {
+          this.stepper = 0
       }
+
   }
 }
 </script>
