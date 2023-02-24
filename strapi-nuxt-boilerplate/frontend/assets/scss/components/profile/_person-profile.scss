@@ -1,0 +1,84 @@
+.person-profile {
+    margin-bottom: 180px;
+    h2 {
+      margin-bottom: 28px;
+    }
+
+    &__card {
+        position: relative;
+        width: 100%;
+        height: 321px;
+        border-radius: 10px;
+        margin-bottom: 23px;
+
+        &__top {
+            height: 168px;
+            width: 100%;
+            background-color: white;
+            border-radius: 10px 10px 0 0;
+        }
+
+        &__line {
+            height: 13px;
+            width: 100%;
+            background-color: $blue;
+        }
+
+        &__bottom {
+            width: 100%;
+            height: 140px;
+            background-color: $darkSmoke;
+            border-radius: 0 0 10px 10px;
+
+            h2 {
+                padding: 30px 0 6px 0;
+                margin: 0;
+            }
+
+            p:first-of-type {
+                font-size: 14px;
+                color: $blue;
+                text-align: center;
+                margin-bottom: 10px;
+            }
+
+            .contacts {
+                display: flex;
+                justify-content: center;
+                column-gap: 20px;
+                padding: 0 17px 0 17px;
+                p {                
+                    font-size: 12px;
+                    color: white;
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        &__image {
+            position: absolute;
+            width: 188px;
+            height: 188px;
+            border-radius: 50%;
+            z-index: 2;
+            top: 28px;
+            left: calc(50% - 94px);
+            background-position: center center;
+            background-size: cover;
+        }
+    }
+
+    button {
+        background-color: $blue;
+    }
+
+    &__buttons {
+        display: flex;
+        column-gap: 16px;
+        margin-top: 16px;
+
+        button {
+            background-color: $darkSmoke;
+        }
+    }
+}

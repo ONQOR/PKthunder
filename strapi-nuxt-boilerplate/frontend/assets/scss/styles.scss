@@ -1,0 +1,198 @@
+// fonts
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
+@import "variables";
+@import "card";
+@import "inputs";
+@import "sign-in";
+@import "img-color";
+@import "ui/button-light-mode";
+@import "components/recipient2/recipient2";
+@import "components/recipient2/physical-card";
+@import "components/recipient/user-info";
+@import "components/recipient/button-section";
+@import "components/profile/business-card";
+@import "components/profile/miniature-card";
+@import "components/profile/person-profile";
+
+body {
+    background-color: lavender;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    font-family: poppins;
+    justify-content: center;
+}
+
+h2 {
+    font-family: 'Poppins';
+    color: white;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+p {
+    font-size: 12px;
+    font-weight: 300;
+    font-family: 'Poppins';
+    color: white;
+}
+
+button {
+    width: 100%;
+    height: 38px;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 16px;
+    border-radius: 10px;
+    color: white;
+
+    &.square {
+        border-radius: 0;
+        border: 2px solid white;
+        height: 100%;
+        background-color: transparent;
+    }
+}
+
+.container {
+    border-radius: 3px;
+    background-color: white;
+    width: 400px;
+    height: 100%;
+    margin: auto;
+    padding: 40px 25px 60px 25px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    // align-items: center;
+    &.dark {
+        background-color: black;
+    }
+    .Logo {
+        margin: 0 0 70px 0;
+        width: 100%;
+    
+        &.dark {
+            path {
+                fill: white;
+            }
+            path:last-child {
+                fill: $blue;
+            }
+        }
+    }
+    .dotted-line {
+        display: block;
+        top: 50px;
+        height: 190px;
+        width: 430px;
+        left: -40px;
+        background-color: transparent;
+        position: relative;
+    }
+}
+
+.border-light {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(90deg, rgb(0, 0, 0) 50%, transparent 50%), 
+                linear-gradient(90deg, rgb(0, 0, 0) 50%, transparent 50%), 
+                linear-gradient(0deg, rgb(0, 0, 0) 50%, transparent 50%), 
+                linear-gradient(0deg, rgb(0, 0, 0) 50%, transparent 50%);
+    background-color: white;
+    color: black;
+    background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+    background-size: 80px 5px, 80px 5px, 5px 80px, 5px 80px;
+    background-position: 0% 0%, 100% 100%, 0% 100%, 100% 0px;
+    animation: dash 50s linear infinite;
+}
+
+.border-dark {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(90deg, rgb(255, 255, 255) 50%, transparent 50%), 
+                linear-gradient(90deg, rgb(255, 255, 255) 50%, transparent 50%), 
+                linear-gradient(0deg, rgb(255, 255, 255) 50%, transparent 50%), 
+                linear-gradient(0deg, rgb(255, 255, 255) 50%, transparent 50%);
+    color: white;
+    background-color: black;
+    background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+    background-size: 80px 5px, 80px 5px, 5px 80px, 5px 80px;
+    background-position: 0% 0%, 100% 100%, 0% 100%, 100% 0px;
+    animation: dash 50s linear infinite;
+}
+
+@keyframes dash {
+    to {
+        background-position: 100% 0%, 0% 100%, 0% 0%, 100% 100%;
+    }
+}
+
+.theme-light {
+
+    .button-light-mode {
+        background-color: black;
+
+        div {
+            background-color: white;
+        }
+    }
+
+    .container.dark {
+        background-color: white;
+    }
+
+    h2, h3, p {
+        color: black;
+    }
+
+    .physical-card {
+        box-shadow: rgb(0 0 0 / 20%) 0px 0px 20px 6px;
+    }
+    
+    button.square {
+        color: black;
+        border-color: black;
+
+        &:hover {
+            background-color: $darkSmoke;
+            color: white;
+        }
+    }
+    
+    .button-light-mode {
+        div {
+            position: absolute;
+            right: 5px;
+        }
+    }
+
+    .user-info__details__image {
+        border: 5px solid black;
+    }
+
+    .Logo {
+        &.dark {
+            path {
+                fill: black;
+            }
+            path:last-child {
+                fill: $blue;
+            }
+        }
+    }
+
+    .physical-card {
+        &__top {
+           p:last-of-type {
+               color: $blue;
+           }
+        }
+        &__bottom {
+           p {
+               color: white;
+           }
+        }
+    }
+}

@@ -1,0 +1,33 @@
+.recipient2 {
+    position: relative;
+    overflow: hidden;
+    .user-info  {
+        margin-bottom: 28px;
+        &__details {
+           bottom: -20px;
+        }
+        &__contacts {
+            bottom: -20px;
+        }
+    }
+    &.container .dotted-line {
+        position: absolute;
+        top: 450px;
+        width: 410px;
+        height: 570px;
+    }
+    .button-section {
+        margin-top: 28px;
+        z-index: 2;
+    }
+    .button-section__buttons {
+        margin-top: 95px;
+        flex-direction: column;
+        padding-right: 43px;
+
+        button.square {
+            width: 100%;
+            margin-bottom: 32px;
+        }
+    }
+}

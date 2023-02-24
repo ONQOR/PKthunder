@@ -1,10 +1,12 @@
 <template>
   <div>
-    <BlockBuilder v-for="(item, index) in this.blocks" :key="index" :blockComponent="item" />
+    <Header />
+    <!-- <BlockBuilder v-for="(item, index) in this.blocks" :key="index" :blockComponent="item" /> -->
   </div>
 </template>
 
 <script>
+import '~/assets/scss/styles.scss'
 import axios from 'axios';
 export default {
   name: 'HomePage', 

@@ -1,0 +1,29 @@
+.button-light-mode {
+    width: 54px;
+    height: 23px;
+    background-color: white;
+    border-radius: 11.5px;
+    position: relative;
+    left: 20px;
+    bottom: 40px;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    div {
+        background-color: black;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+    }
+    .light-on {
+        position: absolute;
+        left: 4px;
+    }
+    .light-off {
+        position: absolute;
+        right: 4px; 
+    }
+    &:hover {
+        cursor: pointer;
+    }
+}

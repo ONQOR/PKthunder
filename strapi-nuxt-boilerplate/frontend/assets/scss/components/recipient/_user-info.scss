@@ -1,0 +1,64 @@
+.user-info {
+    &__details {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        position: relative;
+        bottom: 100px;
+
+        &__image {
+           width: 68px;
+           height: 68px;
+           border: 5px solid white;
+           border-radius: 50%;
+           background-position: center center;
+           background-size: cover;
+        }
+
+        &__name {
+           margin-left: 16px;
+           display: flex;
+           flex-direction: column;
+           justify-content: center;
+           h3 {
+               color: white;
+               font-size: 22px;
+               font-weight: 500;
+           }
+
+           p {
+               font-size: 14px;
+               font-weight: 300;
+               color: white;
+               margin-left: 10px;
+
+               &::before {
+                   display: block;
+                   content: '';
+                   width: 5px;
+                   height: 5px;
+                   background-color: $blue;
+                   position: absolute;
+                   bottom: 15px;
+                   right: 198px;
+               }
+           }
+        }
+
+    }
+
+    &__contacts {
+        display: flex;
+        justify-content: center;
+        margin-top: 16px;
+        position: relative;
+        bottom: 100px;
+        column-gap: 32px;
+
+        p {
+            color: white;
+            font-size: 12px;
+            font-weight: 300;
+        }
+    }
+}

@@ -23,7 +23,8 @@
       "type": "dynamiczone",
       "components": [
         "image.hero-section",
-        "text-content.text-section"
+        "text-content.text-section",
+        "button-section.button-section"
       ]
     },
     "isHome": {
@@ -31,14 +32,15 @@
       "default": false
     },
     "featuredImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     }
   }
 }
