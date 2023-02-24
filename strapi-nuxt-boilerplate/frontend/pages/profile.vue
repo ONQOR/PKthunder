@@ -22,21 +22,21 @@ export default {
             {
                 name: 'Big Changus',
                 company: 'Penguin Breeder',
-                image: '',
+                image: require("~/static/images/image.png"),
                 telephone: '0776969696969',
-                email: 'Big.chungus69@gmail.com'
+                email: 'Big.chungus69@gmail.com',
             },
             {
                 name: 'Red Changus',
                 company: 'Penguin Changus',
-                image: '',
+                image: require("~/static/images/image.png"),
                 telephone: '0789898989969',
                 email: 'Red.chungus69@gmail.com'
             },
             {
                 name: 'Blue Changus',
                 company: 'Penguin Herd',
-                image: '',
+                image: require("~/static/images/image.png"),
                 telephone: '0766666696969',
                 email: 'Blue.chungus69@gmail.com'
             },

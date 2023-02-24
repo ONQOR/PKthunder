@@ -1,12 +1,13 @@
 <template>
     <div class="app__container">
-      <div class="container dark">
+      <div class="container dark recipient2">
             <Logo dark />
             <ButtonLightMode @active="active($event)"/>
             <h2>You’ve scanned:</h2>
-            <div class="dotted-line" :class="lightMode ? 'border-dark' : 'border-light'"></div>
             <UserInfo :user="user"/>
+            <div class="dotted-line" :class="lightMode ? 'border-dark' : 'border-light'"></div>
             <ButtonsSection :user="user"/>
+            <PhysicalCard :user="user"/>
       </div>
     </div>
 </template>
@@ -29,7 +30,6 @@ export default {
   },
   methods: {
       active(event) {
-          console.log(event, 'srdthfjgkhljgfgjlkjggljkgkug;uk;ku')
           this.lightMode = event
       }
   }

@@ -32,10 +32,6 @@
        }
 
        p {
-            font-size: 12px;
-            font-weight: 300;
-            font-family: 'Poppins';
-            color: white;
             margin: 0 auto;
        }
     }
@@ -49,6 +45,7 @@
         z-index: 2;
         top: 0;
         left: calc(50% - 34px);
-        background-color: red;
+        background-position: center center;
+        background-size: cover;
     }
 }

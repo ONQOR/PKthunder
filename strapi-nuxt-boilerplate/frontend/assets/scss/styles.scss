@@ -6,6 +6,8 @@
 @import "sign-in";
 @import "img-color";
 @import "ui/button-light-mode";
+@import "components/recipient2/recipient2";
+@import "components/recipient2/physical-card";
 @import "components/recipient/user-info";
 @import "components/recipient/button-section";
 @import "components/profile/business-card";
@@ -101,7 +103,7 @@ button {
     background-color: white;
     color: black;
     background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
-    background-size: 80px 10px, 80px 10px, 10px 80px, 10px 80px;
+    background-size: 80px 5px, 80px 5px, 5px 80px, 5px 80px;
     background-position: 0% 0%, 100% 100%, 0% 100%, 100% 0px;
     animation: dash 50s linear infinite;
 }
@@ -116,7 +118,7 @@ button {
     color: white;
     background-color: black;
     background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
-    background-size: 80px 10px, 80px 10px, 10px 80px, 10px 80px;
+    background-size: 80px 5px, 80px 5px, 5px 80px, 5px 80px;
     background-position: 0% 0%, 100% 100%, 0% 100%, 100% 0px;
     animation: dash 50s linear infinite;
 }
@@ -144,6 +146,10 @@ button {
     h2, h3, p {
         color: black;
     }
+
+    .physical-card {
+        box-shadow: rgb(0 0 0 / 20%) 0px 0px 20px 6px;
+    }
     
     button.square {
         color: black;
@@ -152,6 +158,13 @@ button {
         &:hover {
             background-color: $darkSmoke;
             color: white;
+        }
+    }
+    
+    .button-light-mode {
+        div {
+            position: absolute;
+            right: 5px;
         }
     }
 
@@ -170,8 +183,16 @@ button {
         }
     }
 
-    .border-dark {
-        background: linear-gradient(90deg, black 50%, transparent 50%), linear-gradient(90deg, black 50%, transparent 50%), linear-gradient(0deg, black 50%, transparent 50%), linear-gradient(0deg, black 50%, transparent 50%);
-        color: black;
+    .physical-card {
+        &__top {
+           p:last-of-type {
+               color: $blue;
+           }
+        }
+        &__bottom {
+           p {
+               color: white;
+           }
+        }
     }
 }
